@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<title>[CONTEUDO-TITULO]</title>
+		<link rel='canonical' href='<!-- canonical -->' />
+		<meta name="Generator" content="e-bicho 3.5">
+		<meta name="author" content="www.operahouse.com.br" />
+		<meta name="author" content="www.theoazevedo.com.br" />
+		<meta name="Description" content="[CONTEUDO-DESCRIPTION]" />
+		<meta name="Keywords" content="[CONTEUDO-KEYWORDS]" />
+		<meta property="og:title" content="[CONTEUDO-TITULO]" />
+		<meta property="og:url" content="<!-- canonical -->" />
+		<meta property="og:description" content="[CONTEUDO-DESCRIPTION]" />
+		<meta property="og:image" content="<!-- ohs:texto:imagem:url -->">
+		<meta property="og:type" content="website" />
+		<link rel="stylesheet" href="css/style.css" />
+		<link rel="stylesheet" href="css/style-personalizado.css" />
+		<script src="/ohs/data/scripts/js/ta-main.js"></script>
+		<script src="/ohs/data/scripts/js/ta-app.js?d=202006"></script>
+		<link rel="stylesheet" href="css/contrast.css">
+		<script  type='text/javascript' src='/ohs/data/scripts/js/acessibilidade.js'></script>
+		<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+		<!-- Global site tag (gtag.js) - Google Analytics -->
+		<script async src="https://www.googletagmanager.com/gtag/js?id=UA-168930481-1"></script>
+		<script>
+			window.dataLayer = window.dataLayer || [];
+			function gtag(){dataLayer.push(arguments);}
+			gtag('js', new Date());
+			gtag('config', 'UA-168930481-1');
+		</script>
+	</head>
+	<body class="bg">
+		<!-- topo -->
+		<header class="container topo">
+			<!-- center -->
+			<div class="center">
+				<!-- logo -->
+				<a href="/" class="logo"><img src="/ohs/data/interface/logo.png" alt="IMPRENSA OFICIAL | GOVERNO DO ESTADO DO AMAZONAS"></a>
+				<!-- logo fim -->
+
+				<!-- data e pesquisa -->
+				<div class="data-pesquisa">
+					<p><img src="/ohs/data/interface/icone-calendario.png" alt="ícone calendário" /><script>document.write(dataFormatada());</script></p>
+					<form method="post" action="/?p=buscar" name="busca" class="grupo-form">
+						<input type="text" name="palavra" placeholder="Pesquisa rápida neste site" />
+						<input type="submit" value="pesquisar" />
+					</form>
+				</div>
+				<!-- data e pesquisa fim -->
+
+				<!-- atendimento e ícones -->
+				<aside>
+					<p><img src="/ohs/data/interface/icone-atendimento.png" alt="Atendimento" /><a href="<!-- ohs:string:minhaConta -->">Minha Conta</a></p>
+					<!-- ohs:iconesRedesSociais -->
+                  
+                  <!--Inicio Conteúdo de acessibilidade-->
+					<!--<p><img src="/ohs/data/interface/icone-fonte.png" alt="Acessibilidade" /><a href="javascript:;">Acessibilidade</a></p>-->
+					<ul>
+						<li><button type="button" class="botao botaomais" onclick="aces_aumentarFonte(this); return false;" title="Aumentar Letra">+A</button></li>
+						<li><button type="button" class="botao" onclick="aces_normalizarFonte();" title="Tamanho Normal">A
+						</button></li>
+						<li><button type="button" class="botao botaomenos" onclick="aces_diminuirFonte(this);" title="Diminuir Letra">-A</button></li>
+						<li><button type="button" id="btn-contraste" class="botao contraste-btn button-toggle-highcontrast" onclick="window.toggleContrast()" onkeydown="window.toggleContrast()">C</button></li>
+					</ul>
+					<!--Fim Conteúdo de Acessibilidade-->
+				</aside>
+				<!-- atendimento e ícones fim -->
+			</div>
+			<!-- center fim -->
+		</header>
+		<!-- topo fim -->
+
+		<!-- menu -->
+		<div class="container menu">
+			<!-- center -->
+			<div class="center">
+				<nav class="menu-mobile">
+					<menu><i class="fa fa-bars"></i> MENU...</menu>				
+					<ul id="n-0">
+						<li class="sub-menu-1">
+							<a href="javascript:;">sobre</a>
+							<ul id="n-1">
+								<li><a href="/imprensa-oficial-do-estado-do-amazonas">Imprensa Oficial</a></li>
+								<li><a href="/historia-da-imprensa-oficial-do-estado-do-amazonas">História</a></li>
+								<li><a href="/estrutura-organizacional">Estrutura Organizacional</a></li>
+								<li><a href="/organograma-da-imprensa-oficial-ioa">Organograma</a></li>
+								<li><a href="/missao-visao-valores">Missão Visão e Valores</a></li>
+								<li><a href="/leis-e-decretos">Leis e Decretos</a></li>
+								<li><a href="/politica-de-qualidade-ioa">Política de Qualidade</a></li>
+							</ul>
+						</li>
+						<!-- <li><a href="/diario-oficial">Diário Oficial</a></li> -->
+						<!-- Adicionado 21/07/2020 por Tiago Carioca -->
+						<li class="sub-menu-5">
+							<a href="javascript:;">Diário Oficial</a>
+							<ul id="n-5">
+								<li><a href="/diario-oficial">Diário Oficial Eletrônico</a></li>
+								<li><a href="/130-duvidas-frequentes">Dúvidas Frequentes</a></li>
+								<li><a href="/normas-para-publicacao">Normas para Publicação</a></li>
+							  	<!-- <li><a href="tabela-de-precos">Tabela de Preço</a></li> -->
+							</ul>
+						</li>
+						<!-- Fim Adicionado 21/07/2020 por Tiago Carioca -->
+						<li class="sub-menu-2">
+							<a href="javascript:;">Gráfica</a>
+							<ul id="n-2">
+								<li><a href="/parque-graficos">Parque Gráfico</a></li>
+								<li><a href="/portfolio">Portfólio</a></li>
+								<li><a href="/clientes">Clientes</a></li>
+								<li><a href="/orcamento">Orçamento</a></li>
+							  	<li><a href="/guias-tecnicos">Guias Técnicos</a></li>
+							</ul>
+						</li>
+						<!-- <li><a href="/certifica-am">Certifica.AM</a></li> -->
+						<li><a href="http://legisla.imprensaoficial.am.gov.br/">Legisla.AM</a></li>
+						<li><a href="/noticias">Notícias</a></li>
+						<li class="sub-menu-4">
+							<a href="javascript:;">Editora</a>
+							<ul id="n-4" style="z-index:1000;">
+								<li><a href="/editora">Sobre a Editora</a></li>
+								<li><a href="/produtos-e-clientes">Produtos e clientes</a></li>
+								<li><a href="/guias-tecnicos">Guias Técnicos</a></li>
+								<!-- <li><a href="/contato">Contato</a></li>
+								<li><a href="/duvidas-frequentes">Dúvidas frequentes</a></li> -->
+							</ul>	
+						</li>
+						<li class="sub-menu-3">
+							<a href="javascript:;">Atendimento</a>
+							<ul id="n-3">
+								<li><a href="/sac">Sac</a></li>
+								<li><a href="/ouvidoria">Ouvidoria</a></li>
+								<li><a href="/e-sic">E-SIC</a></li>
+								<li><a href="/suporte">Suporte</a></li>
+								<li><a href="/fala-br">Fala Br - AM</a></li>
+							</ul>
+						</li>
+					</ul>
+				</nav>			
+			</div>
+			<!-- center fim -->
+		</div>
+		<!-- menu fim -->
+
+		<!-- cabeçalho -->
+		<div class="cabecalho">
+				<!-- ohs:silder -->
+		</div>
+		<!-- cabeçalho fim -->
+
+		<!-- box -->
+		<div class="container box">
+			<!-- center -->
+			<div class="center">
+				<!-- pesquisa DO -->
+				<!-- ohs:banner:pesquisa:DO -->
+				<!-- pesquisa DO fim -->
+
+				<!-- coluna direita -->
+				<div class="col-dir">
+					<!-- banners -->
+					<aside class="banners">
+						<!-- ohs:capaBanners652x162-->
+					</aside>
+					<!-- banners fim -->
+                  
+                  <!-- certificado digital -->
+					<!-- ohs:certificadoDigital -->
+					<!-- certificado digital fim -->
+
+					<!-- gráfica -->
+					<!-- ohs:grafica -->
+					<!-- gráfica fim -->
+				</div>
+				<!-- coluna direita fim -->
+			</div>
+			<!-- center fim -->
+		</div>
+		<!-- box fim -->
+		
+		<!-- secom radio banner -->
+		<section class="container" style="margin-top: 22px;">
+			<div class="center" style="width: 728px;">
+				<iframe src="https://d1uzdx1j6g4d0a.cloudfront.net/players/topo/9/174607/" frameborder="0" width="100%" height="50"></iframe>
+			</div>
+		</section>
+		<!-- secom radio banner fim -->
+		
+		<!-- gov banner -->
+		<section class="container" style="margin-top: 22px;">
+			<div class="center" style="width: 728px;">
+				<div class="textwidget custom-html-widget">
+					<div class="col">
+						<script async src="https://securepubads.g.doubleclick.net/tag/js/gpt.js"></script>
+						<div id="gpt-passback">
+						  <script>
+							window.googletag = window.googletag || {cmd: []};
+							googletag.cmd.push(function() {
+							googletag.defineSlot('/21799500428/GovernoamgovBR', [[1, 1], [300, 250], [728, 90]], 'gpt-passback').addService(googletag.pubads());
+							googletag.enableServices();
+							googletag.display('gpt-passback');
+							});
+						  </script>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- gov banner fim-->
+		
+		<!-- notícias -->
+		<section class="container noticias">
+			<!-- center -->
+			<div class="center">
+				<!-- título seção -->
+				<h1 class="titulo-secao">Notícias <a href="/noticias" class="bt bt-pequeno">Mais Notícias</a></h1>
+				<!-- título seção fim -->
+
+				<!-- bloco -->
+				<section class="bloco">
+					<!-- ohs:capaNoticias -->
+				</section>
+				<!-- bloco fim -->
+			</div>
+			<!-- center fim -->
+		</section>
+		<!-- notícias fim -->
+		
+		<!-- galeria -->
+		<section class="container galeria">
+			<!-- center -->
+			<div class="center">
+				<!-- título seção -->
+				<h1 class="titulo-secao">Galeria <a href="/galeria-de-imagens" class="bt bt-pequeno">Galeria Completa</a></h1>
+				<!-- título seção fim -->
+
+				<!-- bloco -->
+				<!-- ohs:capaGaleriaYouTube -->
+				<!-- bloco fim -->
+			</div>
+			<!-- center fim -->
+		</section>
+		<!-- galeria fim -->
+		
+		<!-- transparência -->
+		<section class="container transparencia">
+			<!-- center -->
+			<div class="center">
+				<!-- título seção -->
+				<h1 class="titulo-secao">Transparência</h1>
+				<!-- título seção fim -->
+
+				<!-- bloco -->
+				<div class="bloco">
+					<a href="/transparencia-fiscal" target="_blank">
+						<img src="/ohs/data/interface/icone-transparencia-fiscal.png" alt="" />
+						<p>Transparência Fiscal</p>
+					</a>
+					<a href="/despesas" target="_blank">
+						<img src="/ohs/data/interface/icone-despesas.png" alt="" />
+						<p>Despesas</p>
+					</a>
+					<a href="/receitas" target="_blank">
+						<img src="/ohs/data/interface/icone-receitas.png" alt="" />
+						<p>Receitas</p>
+					</a>
+					<a href="<!-- ohs:string:tLicitacoes -->" target="_blank">
+						<img src="/ohs/data/interface/icone-licitacoes.png" alt="" />
+						<p>Licitações</p>
+					</a>
+					<a href="https://imprensaoficial.am.gov.br/contratos" target="_blank">
+						<img src="ohs/data/interface/icone-contratos.png" alt="" />
+						<p>Contratos</p>
+					</a>
+					<a href="<!-- ohs:string:tConvenios -->" target="_blank">
+						<img src="/ohs/data/interface/icone-convenios.png" alt="" />
+						<p>Convênios</p>
+					</a>
+					<a href="<!-- ohs:string:tDiarias -->" target="_blank">
+						<img src="/ohs/data/interface/icone-diarias-passagens.png" alt="" />
+						<p>Diárias e Passagens</p>
+					</a>					
+					<a href="<!-- ohs:string:tRespFiscal -->" target="_blank">
+						<img src="/ohs/data/interface/icone-respons-fiscal.png" alt="" />
+						<p>Respons. Fiscal</p>
+					</a>
+					<a href="<!-- ohs:string:tBalanco -->" target="_blank">
+						<img src="/ohs/data/interface/icone-balanco-geral.png" alt="" />
+						<p>Balanço Geral</p>
+					</a>
+					<a href="<!-- ohs:string:tObras -->" target="_blank">
+						<img src="/ohs/data/interface/icone-obras-publicas.png" alt="" />
+						<p>Obras Públicas</p>
+					</a>
+					<a href="/servidores">
+						<img src="/ohs/data/interface/icone-remuneracao-dos-servidores.png" alt="" />
+						<p>Servidores</p>
+					</a>
+					<a href="https://imprensaoficial.am.gov.br/ohs/data/docs/11/IOA_CARTA_SERVICOS_1920X1080_v1.pdf" target="_blank">
+						<img src="/ohs/data/interface/icone-programas-acoes.png" alt="" />
+						<p>Carta de Serviços</p>
+					</a>
+				</div>
+				<!-- bloco fim -->
+			</div>
+			<!-- center fim -->
+		</section>
+		<!-- transparência fim -->
+
+		<!-- downloads e links -->
+		<section class="container downloads-links">
+			<!-- center -->
+			<div class="center">
+				<!-- downloads -->
+				<section class="downloads">
+					<!-- título seção -->
+					<h1 class="titulo-secao">Downloads <a href="/downloads" class="bt bt-pequeno">Mais Downloads</a></h1>
+					<!-- título seção fim -->
+					<section class="bloco">
+						<!-- ohs:capaDownload -->
+					</section>
+				</section>
+				<!-- downloads fim -->
+
+				<!-- links -->
+				<section class="links">					<!-- título seção -->
+					<h1 class="titulo-secao">Links Úteis <a href="/links-uteis" class="bt bt-pequeno">Mais links</a></h1>
+					<!-- título seção fim -->					
+
+					<!-- ohs:capaLinksUteis -->
+				</section>
+				<!-- links fim -->
+			</div>
+			<!-- center fim -->
+		</section>
+		<!-- downloads e links fim -->
+		
+		<!-- externo -->
+		<section class="container banners">
+			<!-- center -->
+			<div class="center">
+				<!-- ohs:banner:sobre:rodape -->
+			</div>
+			<!-- center fim -->
+		</section>
+		<!-- externo fim -->		
+
+		<!-- rodapé -->
+		<footer class="rodape">
+			<!-- imprensa oficial -->
+			<section class="container sobre">
+				<!-- center -->
+				<div class="center">
+					<!-- info -->
+					<article>
+						<!-- <img src="/ohs/data/interface/logo.png" alt=""> -->
+					  	<img src="/ohs/data/images/9/logo-imprensa.png" alt="">
+						<p><!-- ohs:string:endereco --></p>
+						<p><strong><!-- ohs:string:email --></strong><br />Tel: <!-- ohs:string:fone --></p>
+					</article>
+					<!-- info -->
+					<!-- menu -->
+					<ul>
+						<li><a href="/imprensa-oficial-do-estado-do-amazonas">Sobre</a></li>
+						<li><a href="/eventos">Eventos</a></li>
+						<li><a href="/imprensas-oficiais">Imprensas Oficiais</a></li>
+						<li><a href="/diario-oficial">Diário Oficial do Estado</a></li>
+					</ul>
+					<!-- menu fim -->
+					<!-- menu -->
+					<ul>
+						<li><a href="/noticias">Notícias</a></li>
+						<li><a href="/downloads">Downloads</a></li>
+						<li><a href="/links-uteis">Links Úteis</a></li>
+					</ul>
+					<!-- menu fim -->
+					<!-- menu -->
+					<ul>
+						<li><a href="/auditoria">Auditoria</a></li>
+						<li><a href="/galeria-de-imagens">Galeria</a></li>
+						<li><a href="/videos">Vídeos</a></li>
+					</ul>
+					<!-- menu fim -->
+				</div>
+				<!-- center fim -->
+			</section>
+			<!-- imprensa oficial -->			
+
+			<!-- assinatura -->
+			<section class="container assinaturas">
+				<!-- center -->
+				<div class="center">
+					<!-- logo governo do estado -->
+					<p class="governo"><img src="/ohs/data/interface/logo-governo-do-estado.jpg" alt="" />Imprensa Oficial do Estado do Amazonas</p>
+					<!-- logo governo do estado fim -->				
+
+					<!-- logo operahouse -->
+					<p class="oph"><a href="http://operahouse.com.br/" target="operahouse"><img src="/ohs/data/interface/operahouse-icone.png" alt="operahouse" /></a></p>
+					<!-- logo operahouse fim -->
+				</div>
+				<!-- center fim -->
+			</section>
+			<!-- assinatura fim -->
+		</footer>
+		<!-- rodapé fim -->
+<script type="text/javascript">
+var LHCChatOptions = {};
+LHCChatOptions.opt = {widget_height:340,widget_width:300,popup_height:520,popup_width:500,domain:'imprensaoficial.am.gov.br'};
+(function() {
+var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
+var referrer = (document.referrer) ? encodeURIComponent(document.referrer.substr(document.referrer.indexOf('://')+1)) : '';
+var location  = (document.location) ? encodeURIComponent(window.location.href.substring(window.location.protocol.length)) : '';
+po.src = '//chat.imprensaoficial.am.gov.br/index.php/site_admin/chat/getstatus/(click)/internal/(position)/bottom_right/(ma)/br/(top)/350/(units)/pixels/(leaveamessage)/true/(theme)/3/(survey)/1?r='+referrer+'&l='+location;
+var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
+})();
+</script>
+  </body>
+</html>

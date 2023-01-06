@@ -1,0 +1,144 @@
+#logos img{
+    max-height: 100px;
+    max-width: 304px;
+    margin: 8px;
+    /*border: 1px solid black;*/
+}
+
+h1{
+    color: #696969;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+#itens-ioa{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 525px;
+    justify-content: center;
+    margin: 0 auto;
+    margin-bottom: 30px;
+    margin-top: 30px;
+}
+#link-container{
+    max-width: 1050px;
+    margin: 0 auto;
+    /*border: 1px solid black;*/
+
+
+}
+
+.elemento-ioa img{
+    height: 165px;
+    margin: 5px
+}
+
+.elemento{
+    width: 165px;
+    height: 165px;
+    margin: 5px;
+    background-color: #1d3b74;
+    border-radius: 13px;
+    text-align: center;
+    justify-content: center;
+}
+
+.elemento a{
+    font-size: 18px;
+    text-transform: uppercase;
+    text-decoration: none;
+    text-align: center;
+    font-weight: bold;
+    color: white;
+	padding-bottom: 78px;
+}
+
+.elemento img{
+    padding-top: 20px;
+    padding-left: 48px;
+    padding-right: 48px;
+}
+
+#enderecos{
+    display: flex;
+    flex-wrap: wrap;
+    max-width: fit-content;
+    margin: 0 auto;
+	padding: 35px;
+    /*border: 1px solid black;*/
+}
+
+.end-01{
+    text-align: left;
+    margin-right: 20px;
+    /*border: 1px solid black;*/
+}
+
+.end-02{
+    text-align: right;
+    margin-left: 20px;
+    /*border: 1px solid black;*/
+}
+
+.msg-prodam{
+    display: block;
+    margin: 0 auto;
+	padding: 28px;
+    max-width: 700px;
+    /*border: 1px solid black;*/
+}
+
+#logos{
+    display: flex;
+    flex-wrap: wrap;
+    max-width:fit-content;  
+    margin: 0 auto;
+    /*border: 1px solid black;*/
+}
+
+#links{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center
+}
+
+
+footer{
+    font-size: 14px;
+    /*border: 1px solid black;*/
+}
+
+body{
+    background-color: rgb(232, 231, 231);
+	background-image: url(http://imprensaoficial.am.gov.br/ohs/data/images/39/BG-ICON_pq.png);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #696969;
+    /*border: 1px solid black;*/
+}
+
+@media screen and (max-width: 610px){
+    #itens-ioa, #link-container{
+        width: 350px;
+    }
+    .end-01, .end-02{
+        text-align: center;
+        margin: 0 auto;
+    }
+    #enderecos{
+        margin: 0 auto;
+        max-width: 274px;
+    }
+    #logos{
+        margin: 0 auto;
+        max-width: 286px;
+    }
+	.banner-prodam img{
+		width: 100%;
+		margin-left: 0;
+		margin-right: 0;
+		padding-left: 0;
+		padding-right: 0;
+	}
+}
