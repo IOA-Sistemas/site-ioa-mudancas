@@ -1,8 +1,7 @@
 /* faca modificações nesse arquivo e deixe o arquivo style.css com as configuraçoes originais */
-.menu ul li a {
-    margin-right: 50px;
+abbr[title] {
+    text-decoration: none;
 }
-
 
 .slick-prev:before, .slick-next:before {
     color: #f2fcfb;

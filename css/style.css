@@ -1616,6 +1616,8 @@ menu,
 .menu ul {
 	list-style-type: none;
 	width: 100%;
+	display: flex;
+	justify-content: space-between;
 }
 
 @media screen and (max-width: 1124px) {
@@ -1640,7 +1642,8 @@ menu,
 .menu ul .sub-menu-4:hover,
 .menu ul .sub-menu-5:hover,
 .menu ul .sub-menu-6:hover,
-.menu ul .sub-menu-7 .sub-menu-8:hover {
+.menu ul .sub-menu-7 
+.menu ul .sub-menu-8:hover {
 	background-color: #09a5ff;
 	border-top-left-radius: 5px;
 	border-top-right-radius: 5px;
@@ -1765,20 +1768,7 @@ menu,
 	-moz-border-radius-bottomleft: 5px;
 }
 
-.menu ul .sub-menu-1 ul li a,
-.menu ul .sub-menu-2 ul li a,
-.menu ul .sub-menu-3 ul li a,
-.menu ul .sub-menu-4 ul li a,
-.menu ul .sub-menu-5 ul li a,
-.menu ul .sub-menu-6 ul li a,
-.menu ul .sub-menu-7 .sub-menu-8 ul li a {
-	width: 100%;
-	padding: 15px;
-	margin-left: 0px;
-	margin-right: 0px;
-	box-sizing: border-box;
-	color: white;
-}
+
 
 .menu ul .sub-menu-1 ul li a:hover,
 .menu ul .sub-menu-2 ul li a:hover,
@@ -1813,19 +1803,13 @@ menu,
 .menu ul li a {
 	display: inline-block;
 	color: white;
-	padding-top: 15px;
-	padding-bottom: 15px;
-	margin-left: 20px;
-	margin-right: 20px;
+	margin: 15px 0;
 	text-decoration: none;
+	margin-left: 10px;
+	margin-right: 10px;
 }
 
-@media screen and (max-width: 1143px) {
-	.menu ul li a {
-		margin-left: 14px;
-		margin-right: 14px;
-	}
-}
+
 
 @media screen and (max-width: 1047px) {
 	.menu ul li a {
