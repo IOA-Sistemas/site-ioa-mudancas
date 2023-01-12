@@ -40,6 +40,25 @@ abbr[title] {
   	padding-top: 30px;
 }
 
+/*DROPDOWN*/
+
+#drop-box{
+    display: none;
+}
+
+.sub-sub-menu{
+    position: relative;
+}
+
+.sub-sub-menu:hover > #drop-box{
+    position: absolute;
+    display: inline-block;
+    left: 230px;
+    top: auto;
+}
+
+/*DROPDOWN*/
+
 @media screen and (max-width: 1024px) {
     #compendio {
       visibility: hidden;
