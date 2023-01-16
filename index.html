@@ -15,7 +15,7 @@
 		<meta property="og:description" content="[CONTEUDO-DESCRIPTION]" />
 		<meta property="og:image" content="<!-- ohs:texto:imagem:url -->">
 		<meta property="og:type" content="website" />
-		<link rel="stylesheet" href="./ohs/data/css/style.css" />
+		<link rel="stylesheet" href="/ohs/data/css/style.css" />
 		<link rel="stylesheet" href="/ohs/data/css/style-personalizado.css" />
 		<script src="/ohs/data/scripts/js/ta-main.js"></script>
 		<script src="/ohs/data/scripts/js/ta-app.js?d=202006"></script>
@@ -78,7 +78,7 @@
 			<div class="center">
 				<nav class="menu-mobile">
 					<menu><i class="fa fa-bars"></i> MENU...</menu>				
-					<ul id="n-0">
+					<ul id="n" class="menu-off">
 						<li class="sub-menu-1">
 							<a href="javascript:;">sobre</a>
 							<ul id="n-1">
@@ -93,9 +93,9 @@
 						</li>
 						<!-- <li><a href="/diario-oficial">Diário Oficial</a></li> -->
 						<!-- Adicionado 21/07/2020 por Tiago Carioca -->
-						<li class="sub-menu-5">
+						<li class="sub-menu-2">
 							<a href="javascript:;">Diário Oficial</a>
-							<ul id="n-5">
+							<ul id="n-2">
 								<li><a href="/diario-oficial">Diário Oficial Eletrônico</a></li>
 								<li><a href="/duvidas-frequentes">Dúvidas Frequentes</a></li>
 								<li><a href="/normas-para-publicacao">Normas para Publicação</a></li>
@@ -103,11 +103,11 @@
 							</ul>
 						</li>
 						<!-- <li><a href="/certifica-am">Certifica.AM</a></li> -->
-						<li><a href="http://legisla.imprensaoficial.am.gov.br/">Legisla.AM</a></li>
+						<li class="sub-menu-3"><a href="http://legisla.imprensaoficial.am.gov.br/">Legisla.AM</a></li>
 
-						<li class="sub-menu-6">
+						<li class="sub-menu-4">
 							<a href="javascript:;">Serviços</a>
-							<ul id="n-6">
+							<ul id="n-4">
 								<li class="sub-sub-menu">
 									<a href="javascript:;">Serviços gráficos</a>
 									<ul id="drop-box">
@@ -133,20 +133,20 @@
 							</ul>
 						</li>
 
-						<li class="sub-menu-6">
+						<li class="sub-menu-5">
 							<a href="#"><abbr title="Centro de Documentação Memorial">CDM</abbr></a>
-							<ul id="n-6">
+							<ul id="n-5">
 								<li><a href="/cdm">Sobre o CDM</a></li>
 								<li><a href="/acervo">Acervo</a></li>
 								<li><a href="/servicos">Serviços</a></li>
 							</ul>
 						</li>
 
-						<li><a href="/noticias">Notícias</a></li>
+						<li class="sub-menu-6"><a href="/noticias">Notícias</a></li>
 
-						<li class="sub-menu-3">
+						<li class="sub-menu-7">
 							<a href="javascript:;">Atendimento</a>
-							<ul id="n-3">
+							<ul id="n-7">
 								<li><a href="/sac">Sac</a></li>
 								<li><a href="/ouvidoria">Ouvidoria</a></li>
 								<li><a href="/e-sic">E-SIC</a></li>
@@ -199,7 +199,7 @@
 		
 		<!-- secom radio banner -->
 		<section class="container" style="margin-top: 22px;">
-			<div class="center" style="width: 728px;">
+			<div class="center">
 				<iframe src="https://d1uzdx1j6g4d0a.cloudfront.net/players/topo/9/174607/" frameborder="0" width="100%" height="50"></iframe>
 			</div>
 		</section>
@@ -207,7 +207,7 @@
 		
 		<!-- gov banner -->
 		<section class="container" style="margin-top: 22px;">
-			<div class="center" style="width: 728px;">
+			<div class="center" >
 				<div class="textwidget custom-html-widget">
 					<div class="col">
 						<script async src="https://securepubads.g.doubleclick.net/tag/js/gpt.js"></script>
@@ -288,7 +288,7 @@
 						<p>Licitações</p>
 					</a>
 					<a href="https://imprensaoficial.am.gov.br/contratos" target="_blank">
-						<img src="ohs/data/interface/icone-contratos.png" alt="" />
+						<img src="/ohs/data/interface/icone-contratos.png" alt="" />
 						<p>Contratos</p>
 					</a>
 					<a href="<!-- ohs:string:tConvenios -->" target="_blank">
@@ -373,7 +373,7 @@
 					<!-- info -->
 					<article>
 						<!-- <img src="/ohs/data/interface/logo.png" alt=""> -->
-					  	<img src="/ohs/data/images/9/logo-imprensa.png" alt="">
+					  	<img src="/ohs/data/interface/logo-imprensa.png" alt="">
 						<p><!-- ohs:string:endereco --></p>
 						<p><strong><!-- ohs:string:email --></strong><br />Tel: <!-- ohs:string:fone --></p>
 					</article>
@@ -432,6 +432,19 @@ var location  = (document.location) ? encodeURIComponent(window.location.href.su
 po.src = '//chat.imprensaoficial.am.gov.br/index.php/site_admin/chat/getstatus/(click)/internal/(position)/bottom_right/(ma)/br/(top)/350/(units)/pixels/(leaveamessage)/true/(theme)/3/(survey)/1?r='+referrer+'&l='+location;
 var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
 })();
+
+const menu = document.querySelector('menu')
+
+menu.addEventListener('click', () => {
+	element = document.getElementById("n")
+
+	if (element.className === "menu-off") {
+		element.classList.replace("menu-off", "menu-on")
+	} else {
+		element.classList.replace("menu-on", "menu-off")
+	}
+})
+
 </script>
   </body>
 </html>

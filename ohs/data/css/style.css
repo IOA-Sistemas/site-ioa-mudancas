@@ -1632,7 +1632,8 @@ menu,
 .menu ul .sub-menu-4,
 .menu ul .sub-menu-5,
 .menu ul .sub-menu-6,
-.menu ul .sub-menu-7 .sub-menu-8 {
+.menu ul .sub-menu-7, 
+.menu ul .sub-menu-8 {
 	position: relative;
 }
 
@@ -1642,7 +1643,7 @@ menu,
 .menu ul .sub-menu-4:hover,
 .menu ul .sub-menu-5:hover,
 .menu ul .sub-menu-6:hover,
-.menu ul .sub-menu-7 
+.menu ul .sub-menu-7:hover, 
 .menu ul .sub-menu-8:hover {
 	background-color: #09a5ff;
 	border-top-left-radius: 5px;
@@ -1665,7 +1666,8 @@ menu,
 .menu ul .sub-menu-4:hover ul,
 .menu ul .sub-menu-5:hover ul,
 .menu ul .sub-menu-6:hover ul,
-.menu ul .sub-menu-7 .sub-menu-8:hover ul {
+.menu ul .sub-menu-7:hover ul,
+.menu ul .sub-menu-8:hover ul {
 	display: inline-block;
 }
 
@@ -1677,7 +1679,8 @@ menu,
 	.menu ul .sub-menu-4:hover ul,
 	.menu ul .sub-menu-5:hover ul,
 	.menu ul .sub-menu-6:hover ul,
-	.menu ul .sub-menu-7 .sub-menu-8:hover ul {
+	.menu ul .sub-menu-7:hover ul,
+	.menu ul .sub-menu-8:hover ul {
 		display: none;
 	}
 }
@@ -1694,8 +1697,10 @@ menu,
 .menu ul .sub-menu-5:nth-child(7) ul,
 .menu ul .sub-menu-6:nth-child(1) ul,
 .menu ul .sub-menu-6:nth-child(7) ul,
-.menu ul .sub-menu-7 .sub-menu-8:nth-child(1) ul,
-.menu ul .sub-menu-7 .sub-menu-8:nth-child(7) ul {
+.menu ul .sub-menu-7:nth-child(1) ul,
+.menu ul .sub-menu-7:nth-child(7) ul,
+.menu ul .sub-menu-8:nth-child(1) ul,
+.menu ul .sub-menu-8:nth-child(7) ul{
 	width: 240px;
 }
 
@@ -1705,7 +1710,8 @@ menu,
 .menu ul .sub-menu-4:nth-child(3) ul,
 .menu ul .sub-menu-5:nth-child(3) ul,
 .menu ul .sub-menu-6:nth-child(3) ul,
-.menu ul .sub-menu-7 .sub-menu-8:nth-child(3) ul {
+.menu ul .sub-menu-7:nth-child(3) ul,
+.menu ul .sub-menu-8:nth-child(3) ul {
 	width: 150px;
 }
 
@@ -1715,7 +1721,8 @@ menu,
 .menu ul .sub-menu-4 ul,
 .menu ul .sub-menu-5 ul,
 .menu ul .sub-menu-6 ul,
-.menu ul .sub-menu-7 .sub-menu-8 ul {
+.menu ul .sub-menu-7 ul, 
+.menu ul .sub-menu-8 ul {
 	display: none;
 	position: absolute;
 	top: 47px;
@@ -1743,7 +1750,8 @@ menu,
 .menu ul .sub-menu-4 ul li,
 .menu ul .sub-menu-5 ul li,
 .menu ul .sub-menu-6 ul li,
-.menu ul .sub-menu-7 .sub-menu-8 ul li {
+.menu ul .sub-menu-7 ul li,
+.menu ul .sub-menu-8 ul li {
 	width: 100%;
 }
 
@@ -1753,7 +1761,8 @@ menu,
 .menu ul .sub-menu-4 ul li:last-child a,
 .menu ul .sub-menu-5 ul li:last-child a,
 .menu ul .sub-menu-6 ul li:last-child a,
-.menu ul .sub-menu-7 .sub-menu-8 ul li:last-child a {
+.menu ul .sub-menu-7 ul li:last-child a, 
+.menu ul .sub-menu-8 ul li:last-child a {
 	border-top-left-radius: 0px;
 	border-top-right-radius: 0px;
 	border-bottom-right-radius: 5px;
@@ -1776,7 +1785,8 @@ menu,
 .menu ul .sub-menu-4 ul li a:hover,
 .menu ul .sub-menu-5 ul li a:hover,
 .menu ul .sub-menu-6 ul li a:hover,
-.menu ul .sub-menu-7 .sub-menu-8 ul li a:hover {
+.menu ul .sub-menu-7 ul li a:hover,
+.menu il .sub-menu-8 ul li a:hover {
 	background-color: #0073cd;
 }
 
@@ -1821,7 +1831,7 @@ menu,
 .menu ul li a:hover {
 	color: #8bb5fd;
 }
-
+/* 
 @media screen and (max-width: 985px) {
 	menu {
 		width: 100%;
@@ -1877,7 +1887,7 @@ menu,
 	.menu-mobile li a:hover {
 		background-color: #0657e0;
 	}
-}
+} */
 
 .cabecalho {
 	margin-top: 176px;
@@ -2406,7 +2416,7 @@ menu,
 }
 
 .transparencia {
-	margin-top: -80px;
+	margin-top: 30px;
 	height: 624px;
 	background-image: url(../interface/bg-transparencia.jpg);
 	background-position: top top;

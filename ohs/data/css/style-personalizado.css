@@ -1,4 +1,7 @@
 /* faca modificações nesse arquivo e deixe o arquivo style.css com as configuraçoes originais */
+
+/* MENU NAV-BAR */
+
 abbr[title] {
     text-decoration: none;
 }
@@ -12,7 +15,7 @@ abbr[title] {
 }
 
 .menu ul .sub-menu-4 ul{
-	width: 200%;
+	width: 200px;
 }
 
 .menu ul .sub-menu-5 ul{
@@ -40,6 +43,29 @@ abbr[title] {
   	padding-top: 30px;
 }
 
+.menu-mobile menu{
+    display: none;
+}
+@media screen and (max-width: 784px){
+    .menu-mobile menu{
+        display: block;
+        margin: 10px 0px;
+        text-align: center;
+    }
+
+    .menu ul.menu-off {
+        display: none;
+    }
+
+    .menu ul.menu-on {
+        display: flex;
+        flex-direction: column;
+    }
+
+}
+/* MENU NAV-BAR */
+
+
 /*DROPDOWN*/
 
 #drop-box{
@@ -55,6 +81,15 @@ abbr[title] {
     display: inline-block;
     left: 230px;
     top: auto;
+}
+
+@media screen and (max-width: 784px){
+
+    /* .sub-sub-menu:hover > #drop-box {
+        position: absolute;
+        z-index: 5;
+    }
+     */
 }
 
 /*DROPDOWN*/

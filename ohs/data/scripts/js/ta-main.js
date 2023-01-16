@@ -4635,7 +4635,7 @@ function getDefaultDisplay( elem ) {
 	temp.parentNode.removeChild( temp );
 
 	if ( display === "none" ) {
-		display = "block";
+		display = "flex";
 	}
 	defaultDisplayMap[ nodeName ] = display;
 
