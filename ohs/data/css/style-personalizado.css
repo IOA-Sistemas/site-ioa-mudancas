@@ -1,6 +1,40 @@
 /* faca modificações nesse arquivo e deixe o arquivo style.css com as configuraçoes originais */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500&family=Roboto:wght@300;400&display=swap');
 
 /* MENU NAV-BAR */
+/*FONTES*/
+
+* {
+    font-family: 'Montserrat';
+    font-weight: 500;
+}
+
+.titulo-secao {
+    font-family: "Montserrat";
+}
+
+.downloads-links .downloads article h1{
+    font-family: "Montserrat";
+}
+
+.downloads-links .links strong {
+    font-family: "Montserrat";
+}
+
+.grupo-form input, .grupo-form select, .grupo-form textarea {
+    font-family: "Montserrat";
+}
+
+.box .pesquisa strong {
+    font-family: "Montserrat";
+}
+
+.box .pesquisa label{
+    font-family: "Montserrat";
+}
+
+
+/*FONTES*/
 
 abbr[title] {
     text-decoration: none;
@@ -15,7 +49,7 @@ abbr[title] {
 }
 
 .menu ul .sub-menu-4 ul{
-	width: 200px;
+	width: 250px;
 }
 
 .menu ul .sub-menu-5 ul{
@@ -79,7 +113,7 @@ abbr[title] {
 .sub-sub-menu:hover > #drop-box{
     position: absolute;
     display: inline-block;
-    left: 230px;
+    left: 100%;
     top: auto;
 }
 
@@ -93,6 +127,25 @@ abbr[title] {
 }
 
 /*DROPDOWN*/
+
+/*nav-sprite*/
+
+.nav-sprite{
+    position: absolute;
+    right: 10px;
+}
+
+.sub-sub-menu:hover * #seta-menu{
+    transform: rotate(90deg) scaleX(1.25);
+    transition: 0.3s;
+}
+
+.nav-sprite img{
+    width: 10px;
+    height: auto;
+}
+
+/*nav-sprite-fim*/
 
 @media screen and (max-width: 1024px) {
     #compendio {
