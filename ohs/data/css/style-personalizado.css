@@ -1,6 +1,6 @@
 /* faca modificações nesse arquivo e deixe o arquivo style.css com as configuraçoes originais */
 
-/* MENU NAV-BAR */
+/* inicio menu nav bar */
 
 abbr[title] {
     text-decoration: none;
@@ -10,27 +10,27 @@ abbr[title] {
     color: #f2fcfb;
 }
 
-.menu ul .sub-menu-2:nth-child(3) ul{
+.menu ul .sub-menu:nth-child(3) ul{
   	width: 180px;
 }
 
-.menu ul .sub-menu-4 ul{
+.menu ul .sub-menu ul{
 	width: 200px;
 }
 
-.menu ul .sub-menu-5 ul{
+.menu ul .sub-menu ul{
 	width: 265px;
 }
 
-.menu ul .sub-menu-6 ul{
+.menu ul .sub-menu ul{
 	width: 230px;
 }
 
-.menu ul .sub-menu-3:nth-child(7) ul{
+.menu ul .sub-menu:nth-child(7) ul{
 	width: 230px;
 }
 
-.menu ul .sub-menu-1:nth-child(1) ul{
+.menu ul .sub-menu:nth-child(1) ul{
 	width: 285px
 }
 
@@ -53,17 +53,58 @@ abbr[title] {
         text-align: center;
     }
 
-    .menu ul.menu-off {
+    .menu ul.menu-off, 
+    ul#sub-ul.menus-off {
         display: none;
     }
 
-    .menu ul.menu-on {
+    .menu ul.menu-on,
+    ul#sub-ul.menus-on, 
+    .sub-sub-menu ul#drop-box.menu-on {
         display: flex;
         flex-direction: column;
     }
 
+
+    .menu-mobile .sub-menu ul {
+    position: relative !important;
+    top: 0px !important;
+    width: 100% !important;
+    text-align: center !important;
+    background-color: #007dd7 !important;
+    border-radius: 0px !important;
+    -webkit-border-radius: 0px !important;
+    -moz-border-radius: 0px !important;
+    }
 }
-/* MENU NAV-BAR */
+
+.box-cdm {
+    display: none;
+
+}
+a:hover > div.box-cdm {
+    display: flex;
+    position: absolute;
+    top: -144%;
+    z-index: 5;
+    background-color: #007dd7;
+    padding: 8px;
+    border-radius: 6px;
+}
+
+.box-cdm:after,
+.box-cdm:before {
+    border-left: 15px solid transparent;
+    border-right: 15px solid transparent;
+    border-top: 15px solid #007dd7;
+    bottom: -13px;
+    content: '';
+    left: 30%;
+    margin-left: -30px;
+    position: absolute;
+}
+
+/* fim menu nav bar */
 
 
 /*DROPDOWN*/
@@ -76,20 +117,27 @@ abbr[title] {
     position: relative;
 }
 
-.sub-sub-menu:hover > #drop-box{
-    position: absolute;
-    display: inline-block;
-    left: 230px;
-    top: auto;
+@media screen and (min-width: 784px) {
+    
+    .sub-sub-menu:hover > #drop-box{
+        position: absolute;
+        display: inline-block;
+        left: 230px;
+        top: auto;
+    }
 }
 
 @media screen and (max-width: 784px){
-
-    /* .sub-sub-menu:hover > #drop-box {
-        position: absolute;
-        z-index: 5;
+    .sub-sub-menu > ul#drop-box.menus-off {
+        display: none;
     }
-     */
+
+    .sub-sub-menu > ul#drop-box.menus-on {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+    }
+    
 }
 
 /*DROPDOWN*/
@@ -104,6 +152,96 @@ abbr[title] {
       display: none;
     }
   }
+
+/*ligthbox*/
+.galeria .bloco .pinterest img{
+	object-fit: cover;
+    width: 216px;
+    height: 150px;
+}
+
+.galeria .bloco .pinterest img:hover{
+	scale: 1.05;
+}
+
+.galeria .bloco .pinterest .icone-play img {
+    width: 20%;
+    height: auto;
+}
+
+/*ligthbox - fim*/
+
+/*ligthbox-organograma*/
+.img-min{
+    list-style: none;
+    display: flex;
+}
+
+.img-min img{
+    border: 2px solid rgb(25, 72, 158);
+	border-radius: 15px;
+}
+
+.min{
+    width: 500px;
+    padding: 10px;
+}
+
+.lbox:target{
+    opacity: 1;
+    display: block;
+    width: 100%;
+    height: auto;
+    top: 0;
+    left: 0;
+    background: rgb(28, 51, 92, 75%);
+    position: absolute;
+	z-index: 10;
+}
+
+
+
+.lbox{
+    display: none;
+    opacity: 0;
+}
+
+.box_img{
+    width: 1000px;
+    display: flex;
+    justify-content: center;
+	margin: 150px auto;
+}
+
+.btn{
+    color: aliceblue;
+    font-family: "Arial";
+    text-decoration: none;
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    font-size: 40px;
+    text-align: center;
+    position: fixed;
+}
+
+#close{
+    top: 0;
+    right: 2%;
+}
+
+@media screen and (max-width: 768px){
+	.lbox:target{
+        display: none;
+    }
+	.img-min{
+	padding-left: 0;
+	padding-right:25px;
+}
+}
+/*ligthbox-fim - organograma*/
+
+
 /* ExpoAgro*/
 .menuexpo {
 	background-color: #9dcc24;
