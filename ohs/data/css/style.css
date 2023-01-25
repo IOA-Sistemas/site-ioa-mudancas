@@ -1778,17 +1778,17 @@ menu,
 }
 
 
-
-.menu ul .sub-menu-1 ul li a:hover,
-.menu ul .sub-menu-2 ul li a:hover,
-.menu ul .sub-menu-3 ul li a:hover,
-.menu ul .sub-menu-4 ul li a:hover,
-.menu ul .sub-menu-5 ul li a:hover,
-.menu ul .sub-menu-6 ul li a:hover,
-.menu ul .sub-menu-7 ul li a:hover,
-.menu il .sub-menu-8 ul li a:hover {
-	background-color: #0073cd;
-}
+/*
+.menu ul .sub-menu-1:hover,
+.menu ul .sub-menu-2:hover,
+.menu ul .sub-menu-3:hover,
+.menu ul .sub-menu-4:hover,
+.menu ul .sub-menu-5:hover,
+.menu ul .sub-menu-6:hover,
+.menu ul .sub-menu-7:hover,
+.menu ul .sub-menu-8:hover {
+	background-color: #0984cc;
+}*/
 
 .menu ul .aba-ativo {
 	background-color: #09a5ff;
@@ -1828,9 +1828,15 @@ menu,
 	}
 }
 
-.menu ul li a:hover {
-	color: #8bb5fd;
+.menu ul li:hover{
+	background-color: #0984cc;
 }
+
+
+/*
+.menu ul li a:hover {
+	color: #000000;
+}*/
 /* 
 @media screen and (max-width: 985px) {
 	menu {
