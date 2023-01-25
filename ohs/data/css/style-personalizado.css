@@ -1,6 +1,40 @@
 /* faca modificações nesse arquivo e deixe o arquivo style.css com as configuraçoes originais */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500&family=Roboto:wght@300;400&display=swap');
 
-/* inicio menu nav bar */
+/* MENU NAV-BAR */
+/*FONTES*/
+
+* {
+    font-family: 'Montserrat';
+    font-weight: 500;
+}
+
+.titulo-secao {
+    font-family: "Montserrat";
+}
+
+.downloads-links .downloads article h1{
+    font-family: "Montserrat";
+}
+
+.downloads-links .links strong {
+    font-family: "Montserrat";
+}
+
+.grupo-form input, .grupo-form select, .grupo-form textarea {
+    font-family: "Montserrat";
+}
+
+.box .pesquisa strong {
+    font-family: "Montserrat";
+}
+
+.box .pesquisa label{
+    font-family: "Montserrat";
+}
+
+
+/*FONTES*/
 
 abbr[title] {
     text-decoration: none;
@@ -10,18 +44,33 @@ abbr[title] {
     color: #f2fcfb;
 }
 
+.menu ul .sub-menu-2:nth-child(3) ul{
+  	width: 200px;
+}
+.menu ul .sub-menu-1 ul{
+    width: 265px;
+}
+
+.menu ul .sub-menu-2 ul{
+    width: 265px;
 .menu ul .sub-menu:nth-child(3) ul{
   	width: 180px;
 }
 
+.menu ul .sub-menu-4 ul{
+	width: 250px;
 .menu ul .sub-menu ul{
 	width: 200px;
 }
 
+.menu ul .sub-menu-5 ul{
+	width: 200px;
 .menu ul .sub-menu ul{
 	width: 265px;
 }
 
+.menu ul .sub-menu-6 ul{
+	width: 200px;
 .menu ul .sub-menu ul{
 	width: 230px;
 }
@@ -127,6 +176,7 @@ a:hover > div.box-cdm {
     }
 }
 
+
 @media screen and (max-width: 784px){
     .sub-sub-menu > ul#drop-box.menus-off {
         display: none;
@@ -141,6 +191,25 @@ a:hover > div.box-cdm {
 }
 
 /*DROPDOWN*/
+
+/*nav-sprite*/
+
+.nav-sprite{
+    position: absolute;
+    right: 10px;
+}
+
+.sub-sub-menu:hover * #seta-menu{
+    transform: rotate(90deg) scaleX(1.25);
+    transition: 0.3s;
+}
+
+.nav-sprite img{
+    width: 10px;
+    height: auto;
+}
+
+/*nav-sprite-fim*/
 
 @media screen and (max-width: 1024px) {
     #compendio {
