@@ -44,43 +44,12 @@ abbr[title] {
     color: #f2fcfb;
 }
 
-.menu ul .sub-menu-2:nth-child(3) ul{
+.menu ul .sub-menu:nth-child(3) ul{
   	width: 200px;
 }
-.menu ul .sub-menu-1 ul{
-    width: 265px;
-}
 
-.menu ul .sub-menu-2 ul{
-    width: 265px;
-.menu ul .sub-menu:nth-child(3) ul{
-  	width: 180px;
-}
-
-.menu ul .sub-menu-4 ul{
-	width: 250px;
-.menu ul .sub-menu ul{
-	width: 200px;
-}
-
-.menu ul .sub-menu-5 ul{
-	width: 200px;
 .menu ul .sub-menu ul{
 	width: 265px;
-}
-
-.menu ul .sub-menu-6 ul{
-	width: 200px;
-.menu ul .sub-menu ul{
-	width: 230px;
-}
-
-.menu ul .sub-menu:nth-child(7) ul{
-	width: 230px;
-}
-
-.menu ul .sub-menu:nth-child(1) ul{
-	width: 285px
 }
 
 .rodape .sobre {
