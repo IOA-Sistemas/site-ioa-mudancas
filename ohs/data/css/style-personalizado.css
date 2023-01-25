@@ -49,7 +49,7 @@ abbr[title] {
 }
 
 .menu ul .sub-menu ul{
-	width: 265px;
+	width: 250px;
 }
 
 .rodape .sobre {
@@ -140,7 +140,7 @@ a:hover > div.box-cdm {
     .sub-sub-menu:hover > #drop-box{
         position: absolute;
         display: inline-block;
-        left: 230px;
+        left: 100%;
         top: auto;
     }
 }
